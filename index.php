@@ -1,3 +1,3 @@
 <?php
-    echo 'Test commit repos';
+    echo 'Test commit repo';
 ?>
