@@ -23,7 +23,7 @@
         <div class="header__top">
             <div class="container">
                 <div class="header__contacts">
-                    <a class="header__phone" href="tel:89519714913">8 (951) 971 49 13</a>
+                    <a class="header__phone" href="tel:88005553535">8 (800) 555 35 35</a>
                     <a class="header__email" href="#">uslugiDAkzn@gmail.com</a>
                     <a data-fancybox data-src="#modal" href="javascript:;" class="header__btn" href="#">Бесплатная
                         консультация</a>
@@ -45,7 +45,8 @@
                         <ul>
                             <li><a href="#header">Главная</a></li>
                             <li><a href="#services">Услуги</a></li>
-                            <li><a href="#about">О компании</a></li>
+                            <li><a href="#consultation">Консультация</a></li>
+                            <li><a href="#news">Новости</a></li>
                             <li><a href="#footer">Контакты</a></li>
                         </ul>
                     </nav>
@@ -192,7 +193,7 @@
         </div>
     </section>
     <section class="form">
-        <div class="container">
+        <div class="container" id="consultation">
             <div class="form__inner">
                 <div class="form__content">
                     <div class="form__title-box">
@@ -275,7 +276,7 @@
             </div>
         </div>
     </section>
-    <section class="news">
+    <section class="news" id="news">
         <div class="container">
             <div class="news__top">
                 <div class="news__title-box">
@@ -393,7 +394,7 @@
                             Бесплатная консультация
                         </a>
                         <ul class="footer__list">
-                            <li><a class="footer__phone" href="tel:89519714913">8(951)971 49 13</a></li>
+                            <li><a class="footer__phone" href="tel:88005553535">8 (800) 555 35 35</a></li>
                             <li><a>bankkzn@gmail.com</a></li>
                             <li><a class="footer__adress">Казань, ул.Красносельская, 37</a></li>
                         </ul>
@@ -434,10 +435,12 @@
     <div id="modal_closing">
         <form>
             <div class="modal__title">
-                Рассмотрение полного закрытия предприятия
+                Запись на рассмотрение полного закрытия предприятия
             </div>
-            <input type="text" placeholder="Ваше имя">
-            <input type="text" placeholder="Ваш телефон">
+            <input required type="text"placeholder="Ваше имя">
+            <input required type="tel" placeholder="Номер телефона">
+            <input required type="date" placeholder="Выберите дату">
+            <input required type="email" placeholder="E-mail">
             <input type="submit" value="Отправить">
         </form>
     </div>
@@ -447,8 +450,10 @@
             <div class="modal__title">
                 Запись на предоставление адвокатского сопровождения
             </div>
-            <input type="text" placeholder="Ваше имя">
-            <input type="text" placeholder="Ваш телефон">
+            <input required type="text"placeholder="Ваше имя">
+            <input required type="tel" placeholder="Номер телефона">
+            <input required type="date" placeholder="Выберите дату">
+            <input required type="email" placeholder="E-mail">
             <input type="submit" value="Отправить">
         </form>
     </div>
@@ -458,8 +463,10 @@
             <div class="modal__title">
                 Запись на предоставление налогового аудита
             </div>
-            <input type="text" placeholder="Ваше имя">
-            <input type="text" placeholder="Ваш телефон">
+            <input required type="text"placeholder="Ваше имя">
+            <input required type="tel" placeholder="Номер телефона">
+            <input required type="date" placeholder="Выберите дату">
+            <input required type="email" placeholder="E-mail">
             <input type="submit" value="Отправить">
         </form>
     </div>
