@@ -43,18 +43,17 @@
                             <span class="icon-bars"></span>
                         </div>
                         <ul>
-                            <li><a href="#">Главная</a></li>
-                            <li><a href="#">Услуги</a></li>
-                            <li><a href="#">О компании</a></li>
-
-                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#header">Главная</a></li>
+                            <li><a href="#services">Услуги</a></li>
+                            <li><a href="#about">О компании</a></li>
+                            <li><a href="#footer">Контакты</a></li>
                         </ul>
                     </nav>
                 </div>
             </div>
         </div>
     </header>
-    <section class="slider">
+    <section class="slider" id="header">
         <div class="container">
             <div class="slider__inner">
                 <div class="slider__item">
@@ -104,7 +103,7 @@
             </div>
         </div>
     </section>
-    <section class="services">
+    <section class="services" id="services">
         <div class="container">
             <div class="services__top">
                 <div class="services__title-box">
@@ -174,7 +173,7 @@
             </div>
         </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <div class="about__inner">
                 <div class="about__title">
@@ -235,7 +234,8 @@
                                         Сообщение
                                         <textarea></textarea>
                                     </label>
-                                    <button data-fancybox data-src="#modal_form" href="javascript:;" class="default-btn" type="submit">Получить консультацию</button>
+                                    <button data-fancybox data-src="#modal_form" href="javascript:;" class="default-btn"
+                                        type="submit">Получить консультацию</button>
                                 </div>
                             </div>
                         </form>
@@ -377,7 +377,7 @@
         </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="footer__content">
             <div class="container">
                 <div class="footer__inner">
@@ -423,8 +423,10 @@
             <div class="modal__title">
                 Запись на бесплатную консультацию
             </div>
-            <input type="text" placeholder="Ваше имя">
-            <input type="text" placeholder="Ваш телефон">
+            <input required type="text"placeholder="Ваше имя">
+            <input required type="tel" placeholder="Номер телефона">
+            <input required type="date" placeholder="Выберите дату">
+            <input required type="email" placeholder="E-mail">
             <input type="submit" value="Отправить">
         </form>
     </div>
@@ -477,6 +479,8 @@
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.formstyler.min.js"></script>
     <script src="js/main.js"></script>
+
+
 </body>
 
 </html>

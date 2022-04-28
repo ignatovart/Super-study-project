@@ -26,6 +26,10 @@ body{
 }
 .header{
     font-family: 'Roboto', sans-serif;
+    position:-webkit-sticky; 
+    position:sticky;
+    top:0;
+    z-index: 100;
 }
 .header__top{
     background-color: #303030;
@@ -81,6 +85,7 @@ body{
 }
 .header__content{
     padding: 34px 0px 23px;
+    background-color: #fff;
 }
 .header__content-inner{
     display: flex;
