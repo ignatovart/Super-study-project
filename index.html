@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/jquery.formstyler.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
 
 </head>
 
@@ -22,8 +23,8 @@
         <div class="header__top">
             <div class="container">
                 <div class="header__contacts">
-                    <a class="header__phone" href="tel:89519714913">8 (951) 971 49 13</a>
-                    <a class="header__email" href="#">bankkzn@gmail.com</a>
+                    <a class="header__phone" href="tel:88005553535">8 (800) 555 35 35</a>
+                    <a class="header__email" href="#">uslugiDAkzn@gmail.com</a>
                     <a data-fancybox data-src="#modal" href="javascript:;" class="header__btn" href="#">Бесплатная
                         консультация</a>
                 </div>
@@ -38,18 +39,22 @@
                         </a>
                     </div>
                     <nav class="menu">
+                        <div class="header__btn-menu">
+                            <span class="icon-bars"></span>
+                        </div>
                         <ul>
-                            <li><a href="#">Главная</a></li>
-                            <li><a href="#">О компании</a></li>
-                            <li><a href="#">Услуги</a></li>
-                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#header">Главная</a></li>
+                            <li><a href="#services">Услуги</a></li>
+                            <li><a href="#consultation">Консультация</a></li>
+                            <li><a href="#news">Новости</a></li>
+                            <li><a href="#footer">Контакты</a></li>
                         </ul>
                     </nav>
                 </div>
             </div>
         </div>
     </header>
-    <section class="slider">
+    <section class="slider" id="header">
         <div class="container">
             <div class="slider__inner">
                 <div class="slider__item">
@@ -61,7 +66,7 @@
                             Полное прекращение существования юридического лица с сохранением легальности всей предыдущей
                             деятельности.
                         </div>
-                        <a data-fancybox data-src="#modal" href="javascript:;" class="slider__btn default-btn">
+                        <a data-fancybox data-src="#modal_closing" href="javascript:;" class="slider__btn default-btn">
                             Оставить заявку
                         </a>
                     </div>
@@ -69,13 +74,14 @@
                 <div class="slider__item">
                     <div class="slider__item-content">
                         <div class="slider__title">
-                            КОМПЛЕКСНОЕ ЗАКРЫТИЕ ПРЕДПРИЯТИЯ
+                            СОПРОВОЖДЕНИЕ НА ВСЕХ СТАДИЯХ СУДОПРОИЗВОДСТВА
                         </div>
                         <div class="slider__text">
-                            Полное прекращение существования юридического лица с сохранением легальности всей предыдущей
-                            деятельности.
+                            Мы гарантируем полное профессиональное обслуживание клиентов в заявленных сферах
+                            деятельности и
+                            соблюдение конфиденциальности.
                         </div>
-                        <a data-fancybox data-src="#modal" href="javascript:;" class="slider__btn default-btn">
+                        <a data-fancybox data-src="#modal_support" href="javascript:;" class="slider__btn default-btn">
                             Оставить заявку
                         </a>
                     </div>
@@ -83,13 +89,14 @@
                 <div class="slider__item">
                     <div class="slider__item-content">
                         <div class="slider__title">
-                            КОМПЛЕКСНОЕ ЗАКРЫТИЕ ПРЕДПРИЯТИЯ
+                            ПОЛНАЯ ПРОВЕРКА НАЛОГОВЫХ ОБЛОЖЕНИЙ
                         </div>
                         <div class="slider__text">
-                            Полное прекращение существования юридического лица с сохранением легальности всей предыдущей
-                            деятельности.
+                            Налоговый аудит проводят перед проведением налоговых проверок; при оценке возможных
+                            налоговых
+                            рисков; при оптимизации налогооблажения.
                         </div>
-                        <a data-fancybox data-src="#modal" href="javascript:;" class="slider__btn default-btn">
+                        <a data-fancybox data-src="#modal_audit" href="javascript:;" class="slider__btn default-btn">
                             Оставить заявку
                         </a>
                     </div>
@@ -97,7 +104,7 @@
             </div>
         </div>
     </section>
-    <section class="services">
+    <section class="services" id="services">
         <div class="container">
             <div class="services__top">
                 <div class="services__title-box">
@@ -127,7 +134,7 @@
                     </div>
                     <div class="services__item-btn">
                         <a class="services__item-link" href="#">Подробнее</a>
-                        <a data-fancybox data-src="#modal" href="javascript:;" class="default-btn">
+                        <a data-fancybox data-src="#modal_closing" href="javascript:;" class="default-btn">
                             Заказать
                         </a>
                     </div>
@@ -143,7 +150,7 @@
                     </div>
                     <div class="services__item-btn">
                         <a class="services__item-link" href="#">Подробнее</a>
-                        <a data-fancybox data-src="#modal" href="javascript:;" class="default-btn">
+                        <a data-fancybox data-src="#modal_support" href="javascript:;" class="default-btn">
                             Заказать
                         </a>
                     </div>
@@ -159,7 +166,7 @@
                     </div>
                     <div class="services__item-btn">
                         <a class="services__item-link" href="#">Подробнее</a>
-                        <a data-fancybox data-src="#modal" href="javascript:;" class="default-btn">
+                        <a data-fancybox data-src="#modal_audit" href="javascript:;" class="default-btn">
                             Заказать
                         </a>
                     </div>
@@ -167,7 +174,7 @@
             </div>
         </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <div class="about__inner">
                 <div class="about__title">
@@ -186,7 +193,7 @@
         </div>
     </section>
     <section class="form">
-        <div class="container">
+        <div class="container" id="consultation">
             <div class="form__inner">
                 <div class="form__content">
                     <div class="form__title-box">
@@ -217,10 +224,9 @@
                                     <label>
                                         Тема вопроса
                                         <select>
-                                            <option>---------------</option>
-                                            <option>---------------</option>
-                                            <option>---------------</option>
-                                            <option>---------------</option>
+                                            <option>Банкротство и ликвидация</option>
+                                            <option>Адвокатское сопровождение</option>
+                                            <option>Налоговый аудит</option>
                                         </select>
                                     </label>
                                 </div>
@@ -229,7 +235,8 @@
                                         Сообщение
                                         <textarea></textarea>
                                     </label>
-                                    <button class="default-btn" type="submit">Получить консультацию</button>
+                                    <button data-fancybox data-src="#modal_form" href="javascript:;" class="default-btn"
+                                        type="submit">Получить консультацию</button>
                                 </div>
                             </div>
                         </form>
@@ -238,10 +245,239 @@
             </div>
         </div>
     </section>
+    <section class="advantages">
+        <div class="container">
+            <div class="advantages__inner">
+                <div class="advantages-item">
+                    <div class="advantages__title">
+                        Десятки добровольных ликвидаций ежемесячно
+                    </div>
+                    <div class="advantages__text">
+                        Мы умеем минимизировать все риски в процессе добровольной ликвидации юридических лиц.
+                    </div>
+                </div>
+                <div class="advantages-item">
+                    <div class="advantages__title">
+                        Отличное знание законов в сфере банкротства
+                    </div>
+                    <div class="advantages__text">
+                        Позволяют нам эффективно отстаивать как интересы кредиторов, так и интересы
+                        собственников проблемной организации.
+                    </div>
+                </div>
+                <div class="advantages-item">
+                    <div class="advantages__title">
+                        Большой опыт сопровождения банкротства
+                    </div>
+                    <div class="advantages__text">
+                        Мы обладаем большим опытом сопровождения процедур банкротства предприятий.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="news" id="news">
+        <div class="container">
+            <div class="news__top">
+                <div class="news__title-box">
+                    <div class="news__title">
+                        Новости компании
+                    </div>
+                    <div class="news__text">
+                        Комплексный подход к вашему вопросу, своевременная правовая помощь, представление интересов во
+                        всех судебных инстанциях.
+                    </div>
+                </div>
+                <div class="news__btn">
+                    <a href="#">
+                        Открыть все новости
+                    </a>
+                </div>
+            </div>
+            <div class="news__inner">
+                <div class="news__slider">
+                    <div class="news__slider-inner">
+                        <div class="news__slider-item">
+                            <div class="news__slider-title">
+                                Банкротство и ликвидация предприятия в России
+                            </div>
+                            <div class="news__slider-text">
+                                На сегодняшний день, коллектив компании объединяет высокопрофессиональных
+                                экспертов имеющих многолетний опыт в сфере корпоративного права.
+                                На сегодняшний день, коллектив компании объединяет высокопрофессиональных
+                                экспертов имеющих многолетний опыт в сфере корпоративного права.
+                                На сегодняшний день, коллектив компании объединяет высокопрофессиональных
+                                экспертов имеющих многолетний опыт в сфере корпоративного права.
+                            </div>
+                            <div class="news__slider-author">
+                                Дамир Хасаншин, генеральный директор компании DA
+                            </div>
+                        </div>
+                        <div class="news__slider-item">
+                            <div class="news__slider-title">
+                                Банкротство и ликвидация предприятия в России
+                            </div>
+                            <div class="news__slider-text">
+                                На сегодняшний день, коллектив компании объединяет высокопрофессиональных
+                                экспертов имеющих многолетний опыт в сфере корпоративного права.
+                                На сегодняшний день, коллектив компании объединяет высокопрофессиональных
+                                экспертов имеющих многолетний опыт в сфере корпоративного права.
+                                На сегодняшний день, коллектив компании объединяет высокопрофессиональных
+                                экспертов имеющих многолетний опыт в сфере корпоративного права.
+                            </div>
+                            <div class="news__slider-author">
+                                Дамир Хасаншин, генеральный директор компании DA
+                            </div>
+                        </div>
+                        <div class="news__slider-item">
+                            <div class="news__slider-title">
+                                Банкротство и ликвидация предприятия в России
+                            </div>
+                            <div class="news__slider-text">
+                                На сегодняшний день, коллектив компании объединяет высокопрофессиональных
+                                экспертов имеющих многолетний опыт в сфере корпоративного права.
+                                На сегодняшний день, коллектив компании объединяет высокопрофессиональных
+                                экспертов имеющих многолетний опыт в сфере корпоративного права.
+                                На сегодняшний день, коллектив компании объединяет высокопрофессиональных
+                                экспертов имеющих многолетний опыт в сфере корпоративного права.
+                            </div>
+                            <div class="news__slider-author">
+                                Дамир Хасаншин, генеральный директор компании DA
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="news__blog">
+                    <div class="news__images">
+                        <img src="img/news-1.jpg" alt="">
+                        <div class="news__date">03.04</div>
+                    </div>
+                    <div class="news__blog-title">
+                        Новость компании
+                    </div>
+                    <div class="news__blog-text">
+                        На сегодняшний день, коллектив компании объединяет высокопрофессиональных экспертов
+                        имеющих многолетний опыт в сфере корпоративного права.
+                    </div>
+                </a>
+                <a href="#" class="news__blog">
+                    <div class="news__images">
+                        <img src="img/news-2.jpg" alt="">
+                        <div class="news__date">03.04</div>
+                    </div>
+                    <div class="news__blog-title">
+                        Новость компании
+                    </div>
+                    <div class="news__blog-text">
+                        На сегодняшний день, коллектив компании объединяет высокопрофессиональных экспертов
+                        имеющих многолетний опыт в сфере корпоративного права.
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="footer">
+        <div class="footer__content">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__info">
+                        <div class="footer__title">
+                            Комплексное закрытие предприятия
+                        </div>
+                        <div class="footer__text">
+                            Полное прекращение существования юридического лица с сохранением легальности всей предыдущей
+                            деятельности.
+                        </div>
+                        <a data-fancybox data-src="#modal" href="javascript:;" class="header__btn" href="#">
+                            Бесплатная консультация
+                        </a>
+                        <ul class="footer__list">
+                            <li><a class="footer__phone" href="tel:88005553535">8 (800) 555 35 35</a></li>
+                            <li><a>bankkzn@gmail.com</a></li>
+                            <li><a class="footer__adress">Казань, ул.Красносельская, 37</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__map">
+                        <iframe height="250px"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8966.477465671971!2d49.08805596026996!3d55.817208190647754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x415952b5215bf3a5%3A0x3e9818c744c8e56a!2z0JrRgNCw0YHQvdC-0YHQtdC70YzRgdC60LDRjyDRg9C7LiwgMzcsINCa0LDQt9Cw0L3RjCwg0KDQtdGB0L8uINCi0LDRgtCw0YDRgdGC0LDQvSwgNDIwMDQ0!5e0!3m2!1sru!2sru!4v1649929327700!5m2!1sru!2sru"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copy">
+            <div class="container">
+                <div class="copy__text">
+                    © 2022 Template by Ignatov Artyom and Damir Hasanshin. Все права не защищены.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
 
     <div id="modal">
-        <h2>Hello!</h2>
-        <p>You are awesome!</p>
+        <form>
+            <div class="modal__title">
+                Запись на бесплатную консультацию
+            </div>
+            <input required type="text"placeholder="Ваше имя">
+            <input required type="tel" placeholder="Номер телефона">
+            <input required type="date" placeholder="Выберите дату">
+            <input required type="email" placeholder="E-mail">
+            <input type="submit" value="Отправить">
+        </form>
+    </div>
+
+    <div id="modal_closing">
+        <form>
+            <div class="modal__title">
+                Запись на рассмотрение полного закрытия предприятия
+            </div>
+            <input required type="text"placeholder="Ваше имя">
+            <input required type="tel" placeholder="Номер телефона">
+            <input required type="date" placeholder="Выберите дату">
+            <input required type="email" placeholder="E-mail">
+            <input type="submit" value="Отправить">
+        </form>
+    </div>
+
+    <div id="modal_support">
+        <form>
+            <div class="modal__title">
+                Запись на предоставление адвокатского сопровождения
+            </div>
+            <input required type="text"placeholder="Ваше имя">
+            <input required type="tel" placeholder="Номер телефона">
+            <input required type="date" placeholder="Выберите дату">
+            <input required type="email" placeholder="E-mail">
+            <input type="submit" value="Отправить">
+        </form>
+    </div>
+
+    <div id="modal_audit">
+        <form>
+            <div class="modal__title">
+                Запись на предоставление налогового аудита
+            </div>
+            <input required type="text"placeholder="Ваше имя">
+            <input required type="tel" placeholder="Номер телефона">
+            <input required type="date" placeholder="Выберите дату">
+            <input required type="email" placeholder="E-mail">
+            <input type="submit" value="Отправить">
+        </form>
+    </div>
+
+    <div id="modal_form">
+        <form>
+            <div class="modal__title">
+                Спасибо за обращение!<br>
+                Ваша заявка обрабатывается.
+            </div>
+        </form>
     </div>
 
 
@@ -250,6 +486,8 @@
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.formstyler.min.js"></script>
     <script src="js/main.js"></script>
+
+
 </body>
 
 </html>
