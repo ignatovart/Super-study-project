@@ -206,34 +206,34 @@
                         </div>
                     </div>
                     <div class="form__box">
-                        <form>
+                        <form method="post" action="/getcons">
                             <div class="form__box-inner">
                                 <div class="form__box-left">
                                     <label>
                                         E-mail
-                                        <input type="text">
+                                        <input type="text" name="email">
                                     </label>
                                     <label>
                                         Контактный телефон
-                                        <input type="text">
+                                        <input type="text" name="numberUser">
                                     </label>
                                     <label>
                                         ФИО
-                                        <input type="text">
+                                        <input type="text" name="userName">
                                     </label>
                                     <label>
                                         Тема вопроса
                                         <select>
-                                            <option>Банкротство и ликвидация</option>
-                                            <option>Адвокатское сопровождение</option>
-                                            <option>Налоговый аудит</option>
+                                            <option name="type">Банкротство и ликвидация</option>
+                                            <option name="type">Адвокатское сопровождение</option>
+                                            <option name="type">Налоговый аудит</option>
                                         </select>
                                     </label>
                                 </div>
                                 <div class="form__box-right">
                                     <label>
                                         Сообщение
-                                        <textarea></textarea>
+                                        <textarea name="message"></textarea>
                                     </label>
                                     <button data-fancybox data-src="#modal_form" href="javascript:;" class="default-btn"
                                         type="submit">Получить консультацию</button>
@@ -420,54 +420,57 @@
 
 
     <div id="modal">
-        <form>
+        <form method="post" action="/cons">
             <div class="modal__title">
                 Запись на бесплатную консультацию
             </div>
-            <input required type="text"placeholder="Ваше имя">
-            <input required type="tel" placeholder="Номер телефона">
-            <input required type="date" placeholder="Выберите дату">
-            <input required type="email" placeholder="E-mail">
+            <input required type="text"placeholder="Ваше имя" name="userName">
+            <input required type="tel" placeholder="Номер телефона" name="numberUser">
+            <input required type="date" placeholder="Выберите дату" name="consultationDate">
+            <input required type="email" placeholder="E-mail" name="email">
             <input type="submit" value="Отправить">
         </form>
     </div>
 
     <div id="modal_closing">
-        <form>
+        <form method="post" action="/closing">
             <div class="modal__title">
                 Запись на рассмотрение полного закрытия предприятия
             </div>
-            <input required type="text"placeholder="Ваше имя">
-            <input required type="tel" placeholder="Номер телефона">
-            <input required type="date" placeholder="Выберите дату">
-            <input required type="email" placeholder="E-mail">
+            <input required type="text"placeholder="Ваше имя" name="userName">
+            <input required type="tel" placeholder="Номер телефона" name="numberUser">
+            <input required type="date" placeholder="Выберите дату" name="consultationDate">
+            <input required type="email" placeholder="E-mail" name="email">
             <input type="submit" value="Отправить">
+            <input type="hidden" name="closing" value="Запись на рассмотрение полного закрытия предприятия"></input>
         </form>
     </div>
 
     <div id="modal_support">
-        <form>
+        <form method="post" action="/support">
             <div class="modal__title">
                 Запись на предоставление адвокатского сопровождения
             </div>
-            <input required type="text"placeholder="Ваше имя">
-            <input required type="tel" placeholder="Номер телефона">
-            <input required type="date" placeholder="Выберите дату">
-            <input required type="email" placeholder="E-mail">
+            <input required type="text"placeholder="Ваше имя" name="userName">
+            <input required type="tel" placeholder="Номер телефона" name="numberUser">
+            <input required type="date" placeholder="Выберите дату" name="consultationDate">
+            <input required type="email" placeholder="E-mail" name="email">
             <input type="submit" value="Отправить">
+            <input type="hidden" name="support" value="Запись на предоставление адвокатского сопровождения"></input>
         </form>
     </div>
 
     <div id="modal_audit">
-        <form>
+        <form method="post" action="/audit">
             <div class="modal__title">
                 Запись на предоставление налогового аудита
             </div>
-            <input required type="text"placeholder="Ваше имя">
-            <input required type="tel" placeholder="Номер телефона">
-            <input required type="date" placeholder="Выберите дату">
-            <input required type="email" placeholder="E-mail">
+            <input required type="text"placeholder="Ваше имя" name="userName">
+            <input required type="tel" placeholder="Номер телефона" name="numberUser">
+            <input required type="date" placeholder="Выберите дату" name="consultationDate">
+            <input required type="email" placeholder="E-mail" name="email">
             <input type="submit" value="Отправить">
+            <input type="hidden" name="audit" value="Запись на предоставление налогового аудита"></input>
         </form>
     </div>
 
